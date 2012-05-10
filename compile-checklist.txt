@@ -1,0 +1,9 @@
+-change config.php credentials - /config.php
+-empty themes/templates_c
+-remove .svn files (search + delete)
+-get db sql dump (no collations + collations)
+-add changes -> changes.txt
+-update readme -> readme-installation.txt
+-check/delete resetDB
+-update live demo
+-update projects web site

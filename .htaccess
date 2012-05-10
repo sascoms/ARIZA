@@ -1,0 +1,41 @@
+	<FilesMatch "\.(inc|txt|sql|ini|tpl)$">
+		Deny from all
+	</FilesMatch>
+
+	<Files .htaccess>
+		Deny from all
+	</Files>
+
+	<Files robots.txt>
+		#Allow from all
+	</Files>
+	#Shows directory but hides file list
+		IndexIgnore */*
+
+	#Prevent directory index/view - show forbidden message
+		Options +FollowSymLinks -Indexes
+
+	#error document setting
+	ErrorDocument 404 404.shtml
+
+	<IfModule mod_rewrite.c>
+		Options +FollowSymLinks
+		RewriteEngine On
+		RewriteBase /ariza/
+
+		#REWRITE ROOLS BEGIN
+			#RewriteRule ^404.shtml 	index.php?do=404 [QSA,L]
+			RewriteRule ^logout 	index.php?do=logout [QSA,L]
+
+
+		#REWRITE ROOLS END
+		 #Hot link prevention
+		 #RewriteCond %{HTTP_REFERER} !^http://(www.)?gondol.info(/.*)?$ [NC]
+		 #RewriteRule \.(js|gif|jpe?g|bmp|png|css)$ - [NC,F,L]
+
+		 #Prevent special folders viewing
+		 RewriteRule ^(language|logs|error_log|_?trash|cgi-bin)(/.*)?$ - [F,L]
+
+
+	 </IfModule>
+

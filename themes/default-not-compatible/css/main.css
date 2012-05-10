@@ -1,0 +1,190 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+td {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9pt;
+}
+	.noborderOLD {
+		border-top: 1px;
+		border-right: 1px;
+		border-bottom: 1px;
+		border-left: 1px;
+	}
+input {
+	border:1px outset #999999;
+	background-color:#f0f0f0;
+	font-size:8pt;
+	font-family: verdana, arila, helvetica,times;
+}
+	.noborder {
+		border: 1px solid;
+	}
+	
+	#navcontainer
+	{
+	background: #369;
+	margin-top: 25px;
+	margin-bottom: 15px;
+	border-top: 1px solid #9CC;
+	font: normal normal 11px Verdana, Geneva, Arial, Helvetica, sans-serif;
+	}
+	
+	#navlist
+	{
+	list-style: none outside none;
+	margin: 0;
+	padding: 0;
+	}
+	
+	@media all {
+	#navlist {
+	text-align: center
+	}
+	}
+	
+	#navlist li
+	{
+	bottom: 11px;
+	display: inline;
+	line-height: 1.2em;
+	margin: 0;
+	padding: 0;
+	position: relative;
+	}
+	
+	html>body #navlist li
+	{
+	background: #000;
+	margin: 0 3px 0 0;
+	padding: 4px 0px 4px 0;
+	}
+	
+	#navlist a, #navlist a:link, #navlist a:visited
+	{
+	background: #900;
+	border: 1px solid #FFF;
+	bottom: 2px;
+	color: #FFF;
+	cursor: pointer;
+	display: inline;
+	height: 1em;
+	margin: 0;
+	padding: 3px 5px 3px 5px;
+	position: relative;
+	right: 2px;
+	text-decoration: none;
+	}
+	
+	#navlist a:hover
+	{
+	background: #C00;
+	bottom: 1px;
+	color: #FFF;
+	position: relative;
+	right: 1px;
+	}
+	
+	#navlist a:active
+	{
+	background: #999;
+	bottom: 0px;
+	color: #FFF;
+	position: relative;
+	right: 0px;
+	}
+	
+	#navlist li#active
+	{
+	background: #369;
+	bottom: 13px;
+	display: inline;
+	margin: 0 3px 0 0;
+	padding: 0;
+	position: relative;
+	}
+	
+	html>body #navlist li#active
+	{
+	background: #000;
+	margin: 0 4px 0 4px;
+	}
+	
+	#navlist #active a, #navlist #active a:link, #navlist #active a:visited, #navlist #active a:hover
+	{
+	background: #369;
+	border-bottom: none;
+	border-left: 1px solid #9CC;
+	border-right: 1px solid #9CC;
+	border-top: 1px solid #9CC;
+	bottom: 0;
+	color: #FFF;
+	cursor: text;
+	margin: 0;
+	padding: 2px 5px 0 5px;
+	position: relative;
+	right: 0;
+	}	
+
+
+	.hiliteRow {
+		background-color: lightblue;
+	}
+
+	.small {
+		font-size:8pt;
+	}
+
+	legend {
+		font-weight:bold;
+	}
+	fieldset {
+		border: 1px solid lightblue;
+		background-color: #f0f0f0;
+		padding:2px; 
+		margin: 2px;
+	}	
+	
+	fieldset .sub {
+		float:left;
+		border: 1px solid lightblue;
+		background-color: #f0f0f0;
+		padding:2px; 
+		margin: 0px 2px 0px 15px;
+	}
+	
+	.currentOptionName	{
+		padding: 2px;
+		background-color: #ccc;
+		border: 1px outset #ccc;
+		font-weight:bold;
+	}	
+	.currentOptionValue	{
+		padding: 2px;
+		background-color: lightblue;
+		border: 1px outset #ccc;
+	}
+	
+	.leftColDiv {
+		width: 20%;
+		font-weight:bold;
+		border: 1px outset #666;
+		background-color: #fff333;
+		float:left;
+		margin: 2px;
+		padding: 3px;
+		text-align: right;
+	}
+	
+	.rightColDiv {
+		width: 70%;
+		font-weight:normal;
+		border: 0px outset #666;
+		background-color: transparent;
+		float:left;
+		margin: 2px;
+		padding: 0px;
+	
+	}
+	

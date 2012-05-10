@@ -1,0 +1,62 @@
+CHANGES
+
+changes in version 0.9.6
+---------------------------------------------------------------------------------
+-some database fields changes
+
+
+changes in version 0.9.5
+---------------------------------------------------------------------------------
+-added filters to bug list
+-added mail alerts
+-->will send mail to request owner AND responsible staff when new request made
+-->will send mail to request owner when new response made
+
+-added priority selection to new request form
+-changed login form css
+-added new language file as smarty config file
+-converting all lang files to smarty config files
+
+--added user administration
+-added add new user form
+-added delete user button(yet not implemented)
+-added update my account link to the menu
+-->user is now able to update his account and password
+--added priority column to the bug list
+--modified some old scripts to be compatible wityh PHP5 (used PHP5 advantages)
+--added: project administration
+--added: Delete user feature with confirmation
+--added: Delete project
+--added: Priorities administration
+-and some improvements
+
+changes in version 0.9.2
+---------------------------------------------------------------------------------
+-logout link in the menu is displayed only if the user is logged in.
+-admin link in the menu is displayed only if the user has admin rights.
+-admin pages interface improved
+
+- two new site options are added:
+-->site_header: header text to be displayed in the left top corner
+-->site_header_sub: a slogant type text to be displayed under the site_header
+these can be changed from the admin pages.
+
+-added "select" option to the project selection box
+-some language texts are changed: ex: association is changed to assign to:
+
+-no pear:db anymore. now uses pear:mdb2 as database absraction
+
+changes in version 0.9.1
+---------------------------------------------------------------------------------
+-buglist order by is now (closed status, and then bug id )
+-if closed, there will not be checkbox (no operation can be done)
+
+
+changes in version 0.9
+----------------------------------------------------------------------------------
+changed the sql sentences that are used for getting bugs list(main page and bug list page).
+removed join clauses. this change is both for errors occurred on windows environments due to join clauses
+and also for better performance.
+
+-changed the sql sentences that are used to get bug details in bug details page.
+removed join clauses as a solution for errors. also, this change will increase sql query performance.

@@ -1,0 +1,364 @@
+/*****************************************************/
+/*   Design:  MultiFlex-1.1 Update-1 (Screen)        */
+/*   Author:  G. Wolfgang                            */
+/*   Web:     www.1234.info                          */
+/*   Date:    December 4, 2006                       */
+/*****************************************************/
+
+body {
+	font-size: 9pt;
+	margin: 0 auto;
+	padding: 0px;
+	font-family: tahoma, verdana, arial, helvetica, sans-serif;
+	background: url(../img/background.gif) top center repeat-y;
+	color: #333;
+}
+.page-container {width: 770px; margin: 0px auto; padding: 0px; border-left: solid 1px rgb(125,125,125); border-right: solid 1px rgb(125,125,125); border-bottom: solid 1px rgb(125,125,125); background-color: rgb(255,255,255);}
+
+/* Section 2.1 - Global navigation menu */
+.top-left-menu-container {position: absolute; z-index: 3; width: 770px; top: 5px; background-color: transparent; font-size: 8pt;}
+.top-left-menu {float: right; width: 750px; margin: 0px 5px 0px 0px; padding: 0px; background-color: transparent;}
+.top-left-menu ul {float: right; display: inline; list-style: none; margin: 0px; padding: 0px;}
+.top-left-menu li {display: inline; white-space: nowrap; text-transform: none;}
+.top-left-menu li a {display: inline; margin: 0px; padding: 0px 0px 0px 4px; border-left: solid 1px rgb(100,100,100); color: rgb(150,150,150); font-weight: bold; text-decoration: none; font-size: 110%;}
+.top-left-menu a:hover {background-color: rgb(255,255,255); color: rgb(0,0,0); text-decoration: underline;}
+.img-flag {display: inline; vertical-align: text-bottom; height: 1.0em; margin: 0px; padding: 0px; border: solid 1px rgb(0,0,0);}
+
+/* Section 2.2 - Sitename and Banner */
+.site-name  {clear: both; float: left; position: absolute; z-index: 2; width: 700px; top: 20px; margin: 0px; padding-left: 17px; background-color: transparent; color: rgb(255,255,255); font-weight: bold; font-size: 24px;}
+.site-slogan  {float: left; position: absolute; z-index: 1; width: 700px; top: 1.9em; left: 15px; margin: 0px; padding: 0px 0px 0px 3px; background-color: transparent; color: rgb(204,216,228); font-weight: bold; font-size: 12pt;}
+.img-header {clear: both; float: left; width: 770px; height: 100px; margin: 0px; padding: 0px;}
+
+/* Section 2.3 - Main navigation menu */
+.nav-main {clear: both; float: left; width: 770px;  min-height: 2.0em; height: auto !important; height: 2.0em; line-height: 2.0em; margin: 0px; padding: 0px; border-top: solid 1px rgb(84,111,144); border-bottom: solid 1px rgb(84,111,144); background-color: rgb(159,182,213);} /* Use background-color: rgb(176,207,106);	for green */
+.nav-main ul {list-style: none; margin: 0px; padding: 0px; font-weight: bold;}
+.nav-main li {float: left; white-space: nowrap; background-color: inherit;}
+.nav-main li a {margin: 0px; padding: 0px 10px 0px 10px; border-right: solid 1px rgb(255,255,255); color: rgb(255,255,255); text-decoration: none; font-size: 110%;}
+.nav-main a:hover, .nav-main a.selected {background-color: inherit; color: rgb(75,75,75); text-decoration: underline;}
+.buffer {float: left; width: 770px; height: 10px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);}
+
+/******************************/
+/* SECTION 4 - SUB-NAVIGATION */
+/******************************/
+.nav-sub {clear: both; float: left; width: 160px; min-height: 500px; height: auto !important; height: 500px; margin: 0px; padding: 0px; background-color: rgb(255,255,255);}
+.nav-sub ul {float: left; list-style: none; width: 160px; margin: 0px; padding: 0px; border-bottom: solid 1px rgb(200,200,200);}
+.nav-sub li {margin: 0px; padding: 0px;}
+.nav-sub li.title {vertical-align: top; margin: 0px; padding: 0px 5px 4px 20px; color: rgb(100,100,100); text-transform: uppercase; font-weight: bold; font-size: 140%;}
+.nav-sub li.group a {display: block; min-height: 1.5em; height: auto !important; height: 1.5em; line-height: 1.5em; margin: 1px 0px 1px 0px; padding: 0px 7px 0px 10px; border-top: solid 1px rgb(200,200,200);  border-left: solid 10px rgb(201,198,234); color: rgb(100,100,100); font-weight: bold; font-size: 120%;}
+.nav-sub li a {display: block; min-height: 1.5em; height: auto !important; height: 1.5em; line-height: 1.5em; margin: 1px 0px 1px 0px; padding: 0px 7px 0px 10px; border-left: solid 10px rgb(201,198,234); color: rgb(100,100,100); text-decoration: none; font-size: 120%;}
+.nav-sub li a:hover, .nav-sub li a.selected {border-left: solid 10px rgb(121,153,196); color: rgb(0,0,0); text-decoration: none;}
+
+.container-content-sidebar-front {
+	float: left;
+	width: 750px;
+	min-height: 500px;
+	height: auto !important;
+	height: 500px;
+	margin: 3px 3px 3px 4px ;
+	padding: 0px 0px 20px 1px;
+	background-color: rgb(255,255,255);
+	border: 0px solid red;
+}
+/* Section 6C.4 - Text */
+.footer {
+	clear: both;
+	width: 770px;
+	height: 3.0em;
+	margin: 0px;
+	padding: 0.5em 0px 0.5em 0px;
+	border-top: solid 1px rgb(125,125,125);
+	background-color: rgb(159,182,213);
+	color: #fff;
+	font-size: 7pt;
+}
+.footer p {margin: 0px; padding: 0px; text-align: center; line-height: 1.3em; font-size: 110%;}
+.footer a {color: rgb(255,255,255); text-decoration: underline;}
+.footer a:hover {color: rgb(0,0,0); text-decoration: none;}
+
+
+/* Section 10.2 - Title decoration box */
+
+table.classic {
+	border-top: 0px solid #ccc;
+	border-bottom: 1px solid #ccc;
+	margin: auto;
+
+}
+
+table.classic th.rowTitle {
+	background-color: #CFD8DA;
+	border-left:12px solid #666699;
+	font-weight:bold;
+	padding: 4px;
+	line-height: 15px;
+}
+
+table.classic th.cellTitle {
+	background-color: #DCDEF2;
+	border-bottom:1px solid #F5C4BC;
+	font-weight:bold;
+	padding: 4px;
+	line-height: 15px;
+}
+
+table.classic th {
+	background-color:#D3DAF1;
+	font-size:8pt;
+	border-bottom: 1px solid #ccc;
+	padding: 4px;
+	line-height: 15px;
+}
+
+table.classic td {
+	padding-left:8px;
+	padding-right:8px;
+}
+
+table.classic .row1 {
+	background-color: #eceff0;
+}
+
+table.classic .row2 {
+	background-color: #f3f8fa;
+}
+table.classic .row3 {
+	background-color: #f0f0f0;
+}
+table.classic .row4 {
+	background-color: #E6E6E6;
+}
+table.classic .row5 {
+	background-color: #F2F2F2;
+}
+
+table.classic .row6 {
+	background-color: #ccc;
+}
+
+table.classic th a {
+	color: #000;
+	text-decoration: none;
+}
+table.classic th a:hover {
+	text-decoration: underline;
+}
+
+/*
+.rowTitle {
+	background-color: #f0f0f0;
+	border-left:10px solid #CFCCEC;
+	margin-right: 3px;
+	padding: 2px;
+	font-weight:bold;
+}
+*/
+.errorBox {
+	background-color: #FF4040;
+	font-size: 110%;
+	color: #efefef;
+	font-weight:bold;
+}
+.small { font-size: 90%; }
+.smaller { font-size: 85%; }
+.smallest { font-size: 80%; }
+/* Section 10.3 - Horizontal alignments */
+.align-left {text-align: left;}
+.align-right {text-align: right;}
+.align-center {text-align: center;}
+
+.bolder, .bold {
+	font-weight:bold;
+}
+
+/* Section 10.4  Text colors */
+/* SECTION 12 - FORMS 		  */
+textarea {
+	border: 1px solid #ccc;
+	font-size: inherit;
+	font-family: inherit;
+	width: 90%;
+}
+select {
+	border: 1px solid #ccc;
+	font-size: inherit;
+	font-family: inherit;
+}
+.inputs, input {
+	border: 1px solid #ccc;
+	font-size: inherit;
+	font-family: inherit;
+}
+.buttons {
+	border: 1px outset #ccc;
+	font-size: 100%;
+	font-family: inherit;
+}
+.checkbox {
+	background: transparent;
+	border: 0px solid #ccc;
+}
+
+input[type="button"], input[type="submit"], input[type="reset"] {
+	border: 1px outset #ccc;
+	font-size: inherit;
+	font-size: inherit;
+	font-family: inherit;
+}
+input[type="checkbox"], input[type="radio"] {
+	background: transparent;
+	border: 1px solid red;
+}
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+	border: 1px solid #ccc;
+	font-size: inherit;
+	font-family: inherit;
+}
+
+
+
+/*DIV for showing "loading" status while thumbbox is being generated*/
+/*from http://www.dynamicdrive.com/dynamicindex4/thumbnail.htm*/
+/*
+#loadingContentBox{
+
+	position: absolute;
+	visibility: hidden;
+	border: 1px solid black;
+	background-color: #EFEFEF;
+	padding: 5px;
+	z-index: 5;
+	visibility: hidden;
+	top: 0px;
+	left:
+}
+*/
+
+.hilitedRow1 {
+	background-color: #CAE5B2;
+}
+.hilitedRow2 {
+	background-color: lightblue;
+}
+
+fieldset {
+	border: 1px solid lightblue;
+	background-color: #fff;
+	padding:2px;
+	margin: 2px;
+}
+fieldset legend {
+	font-weight:bold;
+}
+
+fieldset .replies {
+	border: 0px;
+	border-bottom: 1px dashed #ccc;
+	background-color: #fff;
+	padding:2px;
+	margin: 2px;
+	margin-top: 15px;
+}
+
+fieldset .replies .response_text {
+	padding: 3px;
+	text-align: justify;
+}
+
+fieldset .replies .response_counter {
+	float: left;
+	color: #ccc;
+	font-size: 250%;
+	font-style: italic;
+	border: 0px solid red;
+	vertical-align: top;
+	margin-right: 3px;
+}
+
+fieldset .sub {
+	float:left;
+	border: 0px;
+	border-bottom: 1px solid orange;
+	background-color: #f0f0f0;
+	padding:2px;
+	margin: 0px 2px 10px 15px;
+}
+
+.currentOptionName	{
+	padding: 2px;
+	background-color: #ccc;
+	border: 1px outset #ccc;
+	font-weight:bold;
+}
+.currentOptionValue	{
+	padding: 2px;
+	background-color: lightblue;
+	border: 1px outset #ccc;
+}
+.redstar {
+	color: #f00; /*red*/
+	font-weight: bold;
+}
+
+/* LOADING MSGS NOTIFIER */
+/* FROM http://www.pointwriter.com/blog/index.php?/archives/2-A-GMail-like-Loading-Notifier.html */
+#rc_notify{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	display: none; visibility: hidden;
+	background-color: white;
+	color: #3578E5;
+	font-weight: bold;
+	margin: 1px; padding: 3px;
+	padding-left: 20px;
+	width: 100px;
+	text-align: center;
+	border-bottom: 1px solid #3578E5;
+
+	background-image: url(../img/ajax-loader-smaller.gif);
+	background-repeat: no-repeat;
+	background-position: 3px 1px;
+	z-index: 1000;
+
+}
+span > div#rc_notify {
+  position: fixed;
+}
+
+.operationResultMsg {
+  background: #E0ECFF;
+  padding: 10px;
+  border: 1px solid #A5C9FF;
+  color: #135;
+  margin: 3px 0px;
+  font-weight: bold;
+  padding: 10px;
+}
+
+a {
+	color: blue;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: underline;
+}
+a:hover {
+	color:brown;
+	text-decoration: underline;
+}
+
+
+#loginform	input {width:60%;font-size:150%;font-family: georgia; font-weight:bold; padding:5px;}
+#loginform	label {width:60%;font-size:150%;font-family: georgia; font-weight:bold; padding:5px;}
+#loginform	th {font-size:150%;font-family: georgia; font-weight:bold; padding:5px;}
+
+.failureText {
+	font-weight: bold;
+	color: red;
+}
+.successText {
+	font-weight: bold;
+	color: green;
+}

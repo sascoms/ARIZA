@@ -1,0 +1,190 @@
+[SITE_GLOBAL] #GLOBAL TRANSLATIONS
+
+	home 			= 'home'
+	new_request 	= 'new request'
+	request_list	= 'request list'
+	usage_report	= 'get a report'
+	admin_area 		= 'admin area'
+	my_account 		= 'my account'
+	secure_logout 	= 'logout'
+
+
+	C31200 = "operation successful .!";
+	C31400 = "Database connection error!";
+	C31410 = "Failed to get a new seq id!";
+	C31420 = "SQL Error!";
+	C31430 = "Duplicate row!";
+
+
+	submit = 'Submit'
+	reset = 'Reset'
+	select = 'Select'
+	select_option_value = '--Select--'
+	hide = 'Hide'
+	show = 'Show'
+	update = 'Update'
+	delete_user = 'Delete user'
+
+	username = 'username'
+	password = 'password'
+	current_password = 'current password'
+	new_password = 'new password'
+	login_error = 'wrong username or password'
+	again = 'again'
+
+
+	// who am i
+	name_surname = 'Full name'
+	department = 'Department'
+	staffIdTitle = 'ID'
+	envOS = 'OS'
+	date = 'Sent date'
+
+	request_form_title = 'Bug/Request Tracking Form'
+	request_type = 'Type'
+	version = 'Project version'
+	no_version_found = 'No version found'
+
+	request_title = 'Title'
+	request_explanation = 'Description'
+	steps_caused_bug = 'Steps that caused this problem'
+	suggested_solutions = 'Suggested solutions '
+	request_attachment = 'Attachment'
+	completed_percentage = 'Completed'
+	request_owner = 'Request Owner'
+	request_report_datetime = 'Report datetime'
+
+
+	// bug list
+	operations = 'Operations'
+	assign_to = 'Assign to'
+	filter = 'Filter'
+	prioritize = 'Prioritize'
+	change_bug_type = 'Change Bug Type'
+
+	sender = 'Sender'
+	priority = 'Priority'
+	forwarded_to = 'Forwarded to'
+	replies = 'Replies'
+	details = 'Details'
+	closed = 'Closed'
+	reply = 'Reply'
+	replies = 'Replies'
+
+
+	there_is_no_response = 'There is no response yet'
+	clear = 'Clear'
+	close = 'Close'
+	solved_datetime = 'Solved datetime'
+	enter_solved_datetime = 'Enter solved datetime'
+	bug_status = 'Status'
+	response_text = 'Response Text'
+	respond = 'Respond to this bug'
+	bug_not_found = 'Bug not found!'
+
+
+	//projects selection
+	select_project_title = 'Projects'
+
+
+	/* ADMIN AREA */
+	change_lang = 'Change Language'
+	change_site_title = 'Change Site Title'
+	change_site_header = 'Change Site Header'
+	change_site_slogan = 'Change Site Slogan'
+	site_options_activation_msg = 'Note: The new site settings will be activated on your next visit!'
+
+	required_fields_msg = 'Empty values not allowed!'
+
+	lang_file_error = 'No language file or problem in your lang files!'
+	current_lang_file = 'Current active lang file'
+	available_lang_files = 'Available language files'
+	lang_file_changed_msg = 'Site language changed.'
+	lang_file_change_failed_msg = 'Failed to change language.'
+
+	change_site_settings = 'Change site settings'
+	current_site_title = 'Current site title'
+
+	no_authorization = 'You do not have permission to enter this area!'
+
+
+	administrate_header 	= 'Administrate:'
+	administrate_users 		= 'Users'
+	administrate_projects 	= 'Projects'
+	administrate_versions 	= 'Projects Versions'
+	administrate_priorities = 'Priorities'
+
+	//users admin
+	users_list 	= 'User/Operator List'
+	add_new_user 	= 'Add new user'
+	update_user_header 	= 'Update user account'
+	users_list_error 	= 'Error: Could not get user list'
+	users_not_found 	= 'Error: Could not get user data'
+
+	user_data_updated 	= 'User data updated!'
+	user_data_update_failed 	= 'User data update failed!'
+
+	user_projects_updated 	= 'User projects updated!'
+	user_projects_total 	= 'Associated Projects (total): '
+	user_projects_failed 	= 'Associated Projects (failed): '
+	user_projects_success 	= 'Associated Projects (success)'
+
+	user_id 	= 'id:'
+	user_name 	= 'user name:'
+	user_firstname 	= 'first name:'
+	user_lastname 	= 'last name:'
+	user_email 	= 'e-mail:'
+	user_type 	= 'type:'
+	user_admin 	= 'is admin?:'
+	user_projects 	= 'projects:'
+	user_project_default 	= 'default project:'
+	user_status 	= 'status:'
+
+
+	//javascript form validation errors
+	js_check_the_errors_below = 'Please check the errors below:'
+	js_required_field_value = 'Empty values not allowed!'
+	js_required_valid_email = 'Please enter a valid e-mail!'
+	js_invalid_email = 'Invalid e-mail address!'
+	js_required_nonzero_start = 'Can not start with zero (0)!'
+	js_invalid_phone_number = 'Invalid phone number!'
+	js_unmatch_field_len = 'Invalid value length '
+	js_invalid_characters = 'Invalid characters!'
+	js_no_option_selected = 'At least one option must be selected!'
+	js_unchecked_box = 'At least one checkbox must be checked!'
+	js_required_numeric_chars = 'Use only numeric characters!'
+
+
+	//form results
+	ajax_is_loading_msg = 'Loading...'
+	ajax_processing_operation = 'Processing your operation...'
+
+	bug_record_insert_success = 'Bug insert operation is successful'
+	bug_record_insert_failure = 'Bug insert operation failed'
+	bug_record_insert_new = 'Insert new bug record'
+
+	response_insert_success = 'Response insert operation is successful'
+	response_insert_failure = 'Response insert operation failed'
+
+	operation_successful_msg = 'Operation is successfully completed!'
+	operation_failure_msg = 'Operation failed!'
+
+
+	//MAILS
+	new_request_made = 'New request made...'
+	added_by = 'Added by'
+	project_label = 'Project'
+	we_received_your_request = 'Thank you! We received your request. <br />We will soon contact you about this issue.'
+	new_respond_made = 'New respond made...'
+	new_respond_message = 'There is a new respond to your request! Find details below...'
+
+	my_account_header = 'Update my account'
+	change_password_header = 'Change my password'
+	apply_to_admin_for_changes = 'Note: You can apply to your admin for unchangable fields(e-mail, user name etc.) in the form!'
+	my_account_update_success = 'Your user information is updated successfuly.'
+	my_account_update_failure = 'An error occurred. Failed to update your user information!'
+
+	passwords_empty_msg = 'Please do not leave blank the password fields!'
+	passwords_match_error_msg = 'The passwords entered do not match!'
+	passwords_change_success = 'Your paswword is changed successfuly.'
+	passwords_change_failure = 'An error occurred! Failed to change your password!'
